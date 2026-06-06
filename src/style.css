@@ -8,8 +8,9 @@
   --ft-color: #fff;
 }
 
+*,
 * > *,
-* {
+*::before {
   box-sizing: border-box;
   font-family: Montserrat;
 }
@@ -41,6 +42,8 @@ html {
   background-color: var(--bg-primary);
   color: var(--ft-color);
   font-size: 1rem;
+  position: relative;
+  overflow: clip;
 }
 
 .navbar {
@@ -63,7 +66,7 @@ html {
   position: absolute;
   width: 80%;
   min-width: 15rem;
-  max-width: 25rem;
+  max-width: 20rem;
   border-radius: 0.5rem;
   top: 10dvh;
   right: 5dvw;
@@ -228,10 +231,16 @@ html {
   display: none;
 }
 
+.overlay {
+  overflow: clip;
+}
+
 .overlay::before {
   content: "";
   position: absolute;
   inset: 0;
+  max-width: 100%;
+  max-height: 100%;
   background: #0d1c2d;
   background: radial-gradient(
     circle,
@@ -239,6 +248,20 @@ html {
     rgba(5, 20, 36, 1) 100%
   );
   z-index: 40;
+  overflow: clip;
+  animation: opacity-in 300ms ease-in;
+}
+
+.overlay--out::before {
+  animation: opacity-out 300ms ease-out forwards;
+}
+
+.navbar__navigation--in {
+  animation: navigation-in 300ms ease-in forwards;
+}
+
+.navbar__navigation--out {
+  animation: navigation-out 300ms ease-out forwards;
 }
 
 @media (min-width: 1000px) {
@@ -306,12 +329,51 @@ html {
   }
 }
 
-/* Define the spinning motion */
 @keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes opacity-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes navigation-in {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes navigation-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50%);
   }
 }

@@ -53,6 +53,10 @@ document.body.addEventListener("click", (event) => {
 
 button.onclick = toggleMenu;
 
+navigationMenu.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+
 function toggleMenu(event: Event): void {
   if (!button || !navigationMenu)
     throw new Error("Unable to find button or navigationMenu element");
@@ -62,11 +66,34 @@ function toggleMenu(event: Event): void {
   isOpen = !isOpen;
   button.innerHTML = isOpen ? closeMenuSVG : hamburguerSVG;
 
-  navigationMenu.classList.toggle("navbar__navigation--close");
-  document.body.classList.toggle("overlay");
+  if (!isOpen) {
+    setTimeout(
+      () => navigationMenu.classList.toggle("navbar__navigation--close"),
+      300,
+    );
+    document.body.classList.toggle("overlay--out");
+    setTimeout(() => {
+      document.body.classList.toggle("overlay");
+      document.body.classList.toggle("overlay--out");
+    }, 300);
+  } else {
+    navigationMenu.classList.toggle("navbar__navigation--close");
+    document.body.classList.toggle("overlay");
+  }
 
   button.classList.toggle("navbar--mobile__menu__button--animate");
+
+  navigationMenu.classList.toggle(
+    isOpen ? "navbar__navigation--in" : "navbar__navigation--out",
+  );
+
   setTimeout(() => {
     button.classList.toggle("navbar--mobile__menu__button--animate");
   }, 150);
+
+  setTimeout(() => {
+    navigationMenu.classList.toggle(
+      isOpen ? "navbar__navigation--in" : "navbar__navigation--out",
+    );
+  }, 300);
 }
