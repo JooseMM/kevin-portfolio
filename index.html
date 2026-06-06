@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kevins-portfolio</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="navbar__logo" href="/">
+        <img src="/src/assets/logo.png" />
+      </a>
+      <button
+        id="navbar-mobile-menu-button"
+        class="navbar--mobile__menu__button"
+      ></button>
+      <nav id="navbar-mobile-navigation" class="navbar__navigation navbar__navigation--close">
+        <ul>
+          <li>
+            <a id="nav-link-1">servicios</a>
+          </li>
+          <li>
+            <a id="nav-link-2">proyectos</a>
+          </li>
+          <li>
+            <a id="nav-link-3">flujo de trabajo</a>
+          </li>
+        </ul>
+        <button id="nav-link-button" class="button">conectar</button>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero__description">
+        <p id="hero-description-extra" class="hero__description__extra">
+          DISPONIBLE PARA PEDIDOS GLOBALMENTE
+        </p>
+        <h1 class="hero__description__title">
+          <span id="hero-description-title">Artesano Dental</span>
+          <b id="hero-description-title-highlight">Precision Digital</b>
+        </h1>
+        <p id="hero-description-paragraph" class="hero__description__paragraph">
+          Dominio de flujos de trabajo complejos en Exocad para acortar la
+          distancia entre los requisitos clínicos y la perfección estética.
+          Especialización en artesanía dental restauradora de alta gama.
+        </p>
+        <div class="hero__description__actions">
+          <button id="hero-description-actions-primary" class="button">
+            Mirar proyectos
+          </button>
+          <button
+            id="hero-description-actions-secondary"
+            class="button button--secondary"
+          >
+            Mi flujo
+          </button>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="/src/assets/hero.png" />
+      </div>
+    </section>
+    <script type="module" src="/src/main.ts" defer></script>
+  </body>
+</html>
