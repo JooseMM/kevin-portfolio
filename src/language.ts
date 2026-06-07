@@ -2,9 +2,9 @@ interface LanguageContent {
   es: { [key: string]: string };
   en: { [key: string]: string };
 }
-let currentLanguage: "es" | "en" = "es";
 
-if (navigator.language?.toLowerCase() == "en") currentLanguage = "en";
+let currentLanguage: "es" | "en" = "en";
+if (navigator.language?.toLowerCase() === "es") currentLanguage = "es";
 
 const HEADER_CONTENT: LanguageContent = {
   en: {
@@ -42,7 +42,24 @@ const HERO_CONTENT: LanguageContent = {
   },
 };
 
-const CONTENT: LanguageContent[] = [HEADER_CONTENT, HERO_CONTENT];
+const SERVICES_CONTENT: LanguageContent = {
+  es: {
+    "services-title": "Servicios de Laboratorio Digital",
+    "services-description":
+      "Elevando la odontología restauradora mediante una planificación digital de precisión y la ciencia de materiales biocompatibles.",
+  },
+  en: {
+    "services-title": "Digital Lab Services",
+    "services-description":
+      "Elevating restorative dentistry through precision digital planning and biocompatible material science.",
+  },
+};
+
+const CONTENT: LanguageContent[] = [
+  HEADER_CONTENT,
+  HERO_CONTENT,
+  SERVICES_CONTENT,
+];
 
 CONTENT.forEach((content) => {
   const keys = Object.keys(content[currentLanguage]);

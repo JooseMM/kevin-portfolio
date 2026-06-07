@@ -84,7 +84,7 @@ function toggleMenu(event: Event): void {
   button.classList.toggle("navbar--mobile__menu__button--animate");
 
   navigationMenu.classList.toggle(
-    isOpen ? "navbar__navigation--in" : "navbar__navigation--out",
+    isOpen ? "menu-right--in" : "menu-right--out",
   );
 
   setTimeout(() => {
@@ -93,7 +93,7 @@ function toggleMenu(event: Event): void {
 
   setTimeout(() => {
     navigationMenu.classList.toggle(
-      isOpen ? "navbar__navigation--in" : "navbar__navigation--out",
+      isOpen ? "menu-right--in" : "menu-right--out",
     );
   }, 300);
 }
