@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kevins-portfolio</title>
+    <title>Kevin Contreras | Digital Dental Technicians</title>
   </head>
   <body>
     <header class="navbar">
@@ -20,12 +20,12 @@
         id="navbar-mobile-navigation"
         class="navbar__navigation navbar__navigation--close"
       >
-        <ul>
+        <ul id="navbar-link-list">
           <li>
-            <a id="nav-link-1">servicios</a>
+            <a id="nav-link-1" href="/#services">servicios</a>
           </li>
           <li>
-            <a id="nav-link-2">proyectos</a>
+            <a id="nav-link-2" href="/#projects">proyectos</a>
           </li>
           <li>
             <a id="nav-link-3">flujo de trabajo</a>
@@ -104,8 +104,8 @@
         <img src="/src/assets/hero.png" />
       </div>
     </section>
-    <!-- Hero Section -->
-    <section class="services">
+    <!-- Services Section -->
+    <section id="services" class="services horizontal-padding">
       <div class="services__description">
         <h3 id="services-title">Digital Lab Services</h3>
         <p id="services-description">
@@ -113,7 +113,7 @@
           biocompatible material science.
         </p>
       </div>
-      <ul class="services__list">
+      <ul id="services-list" class="services__list">
         <li class="services__list__item--first">
           <div class="services__list__description">
             <svg
@@ -147,10 +147,10 @@
                 </g>
               </g>
             </svg>
-            <h3>3D Implant Planning</h3>
-            <p>
-              Fully guided surgical solutions including stackable guides and
-              immediate temporization designs for complex multi- unit cases.
+            <h3 id="services-description-1-title">3D Implant Planning</h3>
+            <p id="services-description-1-description">
+              Monolithic Zirconia or Pekkton frameworks with high-end aesthetic
+              layering protocols.
             </p>
             <ul class="services__list__description__extra">
               <li>
@@ -178,7 +178,7 @@
                     ></path>
                   </g>
                 </svg>
-                <p>DICOM / STL Merging</p>
+                <p id="services-description-1-extra-1">DICOM / STL Merging</p>
               </li>
               <li>
                 <svg
@@ -205,7 +205,7 @@
                     ></path>
                   </g>
                 </svg>
-                <p>Nerve Mapping</p>
+                <p id="services-description-1-extra-2">Nerve Mapping</p>
               </li>
 
               <li>
@@ -233,8 +233,7 @@
                     ></path>
                   </g>
                 </svg>
-                <p>Bone Reduction Guides</p>
-                <p></p>
+                <p id="services-description-1-extra-3">Bone Reduction Guides</p>
               </li>
             </ul>
           </div>
@@ -243,8 +242,8 @@
         <li class="services__list__item--slim">
           <div class="services__list__description">
             <svg
-              viewBox="0 0 24 24"
-              fill="none"
+              fill="#ddb7ff"
+              viewBox="0 -64 640 640"
               xmlns="http://www.w3.org/2000/svg"
             >
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -255,17 +254,14 @@
               ></g>
               <g id="SVGRepo_iconCarrier">
                 <path
-                  clip-rule="evenodd"
-                  d="M12.0001 2.5C10.0671 2.5 8.50011 4.067 8.50011 6C8.50011 7.12169 9.02795 8.11964 9.84726 8.7597L6.55263 14.5253C5.6527 13.7732 4.91061 12.8383 4.38341 11.7775C4.26052 11.5302 3.96043 11.4294 3.71314 11.5522C3.46585 11.6751 3.36501 11.9752 3.4879 12.2225C4.10342 13.4611 4.98154 14.5465 6.04952 15.4057L3.56599 19.7519C3.42898 19.9917 3.51228 20.2971 3.75204 20.4341C3.9918 20.5711 4.29723 20.4878 4.43423 20.2481L6.86517 15.9939C8.34565 16.9469 10.1082 17.5 12.0001 17.5C13.8921 17.5 15.6546 16.9469 17.1351 15.994L19.566 20.2481C19.703 20.4878 20.0084 20.5711 20.2482 20.4341C20.4879 20.2971 20.5712 19.9917 20.4342 19.7519L17.9507 15.4058C19.0187 14.5465 19.8968 13.4611 20.5124 12.2225C20.6353 11.9752 20.5344 11.6751 20.2871 11.5522C20.0398 11.4294 19.7397 11.5302 19.6169 11.7775C19.0897 12.8383 18.3476 13.7732 17.4476 14.5253L14.153 8.75975C14.973 8.11919 15.5001 7.12115 15.5001 6C15.5001 4.067 13.9331 2.5 12.0001 2.5ZM7.36208 15.1243L10.7152 9.25645C11.1133 9.41368 11.547 9.5 12.0001 9.5C12.4538 9.5 12.8873 9.41368 13.2851 9.25657L16.6382 15.1244C15.3043 15.9945 13.7111 16.5 12.0001 16.5C10.2891 16.5 8.69597 15.9945 7.36208 15.1243Z"
-                  fill="#ddb7ff"
-                  fill-rule="evenodd"
+                  d="M544 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h448c53.02 0 96-42.98 96-96V96c0-53.02-42.98-96-96-96zM160 368c0 26.51-21.49 48-48 48s-48-21.49-48-48v-64c0-8.84 7.16-16 16-16h64c8.84 0 16 7.16 16 16v64zm0-128c0 8.84-7.16 16-16 16H80c-8.84 0-16-7.16-16-16v-64c0-26.51 21.49-48 48-48s48 21.49 48 48v64zm144 120c0 30.93-25.07 56-56 56s-56-25.07-56-56v-56c0-8.84 7.16-16 16-16h80c8.84 0 16 7.16 16 16v56zm0-120c0 8.84-7.16 16-16 16h-80c-8.84 0-16-7.16-16-16v-88c0-30.93 25.07-56 56-56s56 25.07 56 56v88zm144 120c0 30.93-25.07 56-56 56s-56-25.07-56-56v-56c0-8.84 7.16-16 16-16h80c8.84 0 16 7.16 16 16v56zm0-120c0 8.84-7.16 16-16 16h-80c-8.84 0-16-7.16-16-16v-88c0-30.93 25.07-56 56-56s56 25.07 56 56v88zm128 128c0 26.51-21.49 48-48 48s-48-21.49-48-48v-64c0-8.84 7.16-16 16-16h64c8.84 0 16 7.16 16 16v64zm0-128c0 8.84-7.16 16-16 16h-64c-8.84 0-16-7.16-16-16v-64c0-26.51 21.49-48 48-48s48 21.49 48 48v64z"
                 ></path>
               </g>
             </svg>
-            <h3>3D Implant Planning</h3>
-            <p>
-              Fully guided surgical solutions including stackable guides and
-              immediate temporization designs for complex multi- unit cases.
+            <h3 id="services-description-2-title">Full Arch Restoration</h3>
+            <p id="services-description-2-description">
+              Monolithic Zirconia or Pekkton frameworks with high-end aesthetic
+              layering protocols.
             </p>
           </div>
         </li>
@@ -291,31 +287,380 @@
                 ></path>
               </g>
             </svg>
-            <h3>3D Implant Planning</h3>
-            <p>
-              Fully guided surgical solutions including stackable guides and
-              immediate temporization designs for complex multi- unit cases.
+            <h3 id="services-description-3-title">Smile Design</h3>
+            <p id="services-description-3-description">
+              2D/3D facial integration using Exocad Smile Creator for
+              predictable aesthetic outcomes.
             </p>
           </div>
         </li>
         <li class="services__list__item--last">
           <img src="src/assets/services-2.png" />
           <div class="services__list__description">
-            <h3>3D Implant Planning</h3>
-            <p>
-              Fully guided surgical solutions including stackable guides and
-              immediate temporization designs for complex multi- unit cases.
+            <svg
+              viewBox="0 0 20 20"
+              id="meteor-icon-kit__solid-books"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1 4H5C5.55228 4 6 4.44772 6 5V19C6 19.5523 5.55228 20 5 20H1C0.44772 20 0 19.5523 0 19V5C0 4.44772 0.44772 4 1 4zM2 13V17C2 17.5523 2.44772 18 3 18C3.55228 18 4 17.5523 4 17V13C4 12.4477 3.55228 12 3 12C2.44772 12 2 12.4477 2 13zM8 0H12C12.5523 0 13 0.44772 13 1V19C13 19.5523 12.5523 20 12 20H8C7.44772 20 7 19.5523 7 19V1C7 0.44772 7.44772 0 8 0zM9 11V17C9 17.5523 9.4477 18 10 18C10.5523 18 11 17.5523 11 17V11C11 10.4477 10.5523 10 10 10C9.4477 10 9 10.4477 9 11zM15 2H19C19.5523 2 20 2.44772 20 3V19C20 19.5523 19.5523 20 19 20H15C14.4477 20 14 19.5523 14 19V3C14 2.44772 14.4477 2 15 2zM16 15V17C16 17.5523 16.4477 18 17 18C17.5523 18 18 17.5523 18 17V15C18 14.4477 17.5523 14 17 14C16.4477 14 16 14.4477 16 15z"
+                  fill="#ddb7ff"
+                ></path>
+              </g>
+            </svg>
+            <h3 id="services-description-4-title">Exocad Mastery</h3>
+            <p id="services-description-4-description">
+              Leveraging advanced scripting and custom library integration to
+              provide restorations that fit perfectly and look natural.
             </p>
             <ul class="services__list__description__extra">
-              <li>Zirconia</li>
-              <li>E-Max</li>
-              <li>PMMA</li>
-              <li>Titanium</li>
+              <li id="services-description-4-extra-1">Zirconia</li>
+              <li id="services-description-4-extra-2">E-Max</li>
+              <li id="services-description-4-extra-3">PMMA</li>
+              <li id="services-description-4-extra-4">Titanium</li>
             </ul>
           </div>
         </li>
       </ul>
     </section>
+    <section id="projects" class="projects">
+      <div id="projects-title-container" class="projects__title">
+        <h3 id="projects-title">The Digital Showcase</h3>
+        <p id="project-title-description">
+          Experience interactive 3D cases rendered directly from our Exocad
+          workflow. Toggle materials and inspect restorations with surgical
+          precision.
+        </p>
+      </div>
+      <div
+        id="projects-showcase-container"
+        class="projects__showcase__container"
+      >
+        <iframe
+          sandbox="allow-scripts allow-same-origin"
+          class="projects__showcase"
+          id="projects-showcase"
+          src=""
+        >
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+        <button
+          id="project-showcase-prev"
+          class="projects__showcase__button projects__showcase__button--previous"
+        >
+          <svg
+            viewBox="0 -2 12 12"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            fill="#000000"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>previous [#999]</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g
+                  id="Dribbble-Light-Preview"
+                  transform="translate(-104.000000, -3805.000000)"
+                  fill="#ddb7ff"
+                >
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path
+                      d="M59.9990013,3645.86816 L59.9990013,3652.13116 C59.9990013,3652.84516 58.8540013,3653.25316 58.2180013,3652.82516 L53.9990013,3650.14016 L53.9990013,3652.13116 C53.9990013,3652.84516 53.4260013,3653.25316 52.7900013,3652.82516 L48.4790013,3649.69316 C47.9650013,3649.34616 47.7980013,3648.65316 48.3120013,3648.30616 L52.7900013,3645.17516 C53.4260013,3644.74616 53.9990013,3645.15416 53.9990013,3645.86816 L53.9990013,3647.85916 L58.2180013,3645.17516 C58.8540013,3644.74616 59.9990013,3645.15416 59.9990013,3645.86816"
+                      id="previous-[#999]"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </button>
+        <button
+          id="project-showcase-next"
+          class="projects__showcase__button projects__showcase__button--next"
+        >
+          <svg
+            viewBox="0 -2 12 12"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            fill="#000000"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>next [#998]</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g
+                  id="Dribbble-Light-Preview"
+                  transform="translate(-144.000000, -3805.000000)"
+                  fill="#ddb7ff"
+                >
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path
+                      d="M99.684,3649.69353 L95.207,3652.82453 C94.571,3653.25353 94,3652.84553 94,3652.13153 L94,3650.14053 L89.78,3652.82453 C89.145,3653.25353 88,3652.84553 88,3652.13153 L88,3645.86853 C88,3645.15453 89.145,3644.74653 89.78,3645.17453 L94,3647.85953 L94,3645.86853 C94,3645.15453 94.571,3644.74653 95.207,3645.17453 L99.516,3648.30653 C100.03,3648.65353 100.198,3649.34653 99.684,3649.69353"
+                      id="next-[#998]"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="before_after">
+      <div id="before-after-description" class="before_after__description">
+        <h3>
+          <b id="before-after-title-b">Before & After:</b>
+          <span id="before-after-title-span">The Precision Shift</span>
+        </h3>
+        <p id="before-after-title-description">
+          Our digital-first approach eliminates the inconsistencies of manual
+          modeling. See the transformation from a compromised dentition to a
+          digitally mastered restoration.
+        </p>
+        <ul class="before_after__list">
+          <li>
+            <div><p>1</p></div>
+            <p>
+              <b id="before-after-list-1-b">Intraoral Scan: </b>
+              <span id="before-after-list-1-span"
+                >High-resolution digital impressions eliminate uncomfortable
+                manual putty molds.
+              </span>
+            </p>
+          </li>
+          <li>
+            <div><p>2</p></div>
+            <p>
+              <b id="before-after-list-2-b">Dynamic Analysis: </b>
+              <span id="before-after-list-2-span"
+                >Occlusal simulation ensures long-term stability and functional
+                comfort.
+              </span>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <img id="before-after-image" src="src/assets/before-after.png" />
+    </section>
+    <section class="cta">
+      <div class="cta__contact">
+        <h3>Ready to Digitalize?</h3>
+        <p>
+          Connect with a technician who speaks both "Dentist" and "Digital".
+          Let's collaborate on your next complex case.
+        </p>
+        <ul class="cta__contact__list">
+          <li>
+            <a href="mailto:info@dentalstudio.com">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16"
+                    stroke="#ddb7ff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+15551234567">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g id="Communication / Phone">
+                    <path
+                      id="Vector"
+                      d="M9.50246 4.25722C9.19873 3.4979 8.46332 3 7.64551 3H4.89474C3.8483 3 3 3.8481 3 4.89453C3 13.7892 10.2108 21 19.1055 21C20.1519 21 21 20.1516 21 19.1052L21.0005 16.354C21.0005 15.5361 20.5027 14.8009 19.7434 14.4971L17.1069 13.4429C16.4249 13.1701 15.6483 13.2929 15.0839 13.7632L14.4035 14.3307C13.6089 14.9929 12.4396 14.9402 11.7082 14.2088L9.79222 12.2911C9.06079 11.5596 9.00673 10.3913 9.66895 9.59668L10.2363 8.9163C10.7066 8.35195 10.8305 7.57516 10.5577 6.89309L9.50246 4.25722Z"
+                      stroke="#ddb7ff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="cta__contact__tech">
+          <li>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M4 12.6111L8.92308 17.5L20 6.5"
+                  stroke="#d4e4fa"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+            EXOCAD
+          </li>
+          <li>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M4 12.6111L8.92308 17.5L20 6.5"
+                  stroke="#d4e4fa"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+            3SHAPE
+          </li>
+          <li>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M4 12.6111L8.92308 17.5L20 6.5"
+                  stroke="#d4e4fa"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+            MEDIT
+          </li>
+          <li>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M4 12.6111L8.92308 17.5L20 6.5"
+                  stroke="#d4e4fa"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+            ITERO
+          </li>
+        </ul>
+      </div>
+    </section>
     <script type="module" src="/src/main.ts" defer></script>
+    <footer>
+      <a class="navbar__logo" href="/">
+        <img src="/src/assets/logo.png" />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a id="footer-link-1" href="/#services">services</a>
+          </li>
+          <li>
+            <a id="footer-link-2" href="/#projects">showcase</a>
+          </li>
+          <li>
+            <a id="footer-link-3">workflow</a>
+          </li>
+        </ul>
+      </nav>
+      <p>© 2024 DIGITAL DENTAL CRAFTSMAN. ALL RIGHTS RESERVED.</p>
+    </footer>
   </body>
 </html>

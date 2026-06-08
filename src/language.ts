@@ -21,6 +21,19 @@ const HEADER_CONTENT: LanguageContent = {
   },
 };
 
+const FOOTER_CONTENT: LanguageContent = {
+  en: {
+    "footer-link-1": "service",
+    "footer-link-2": "projects",
+    "footer-link-3": "workflow",
+  },
+  es: {
+    "footer-link-1": "servicios",
+    "footer-link-2": "proyectos",
+    "footer-link-3": "flujo de trabajo",
+  },
+};
+
 const HERO_CONTENT: LanguageContent = {
   es: {
     "hero-description-extra": "disponible para pedidos globalmente",
@@ -42,16 +55,102 @@ const HERO_CONTENT: LanguageContent = {
   },
 };
 
+const PROJECT_CONTENT: LanguageContent = {
+  es: {
+    "projects-title": "El Escaparate Digital",
+    "project-title-description":
+      "Experimente casos interactivos en 3D renderizados directamente desde nuestro flujo de trabajo de Exocad. Altere entre materiales e inspeccione las restauraciones con precisión quirúrgica.",
+  },
+  en: {
+    "projects-title": "The Digital Showcase",
+    "project-title-description":
+      "Experience interactive 3D cases rendered directly from our Exocad workflow. Toggle materials and inspect restorations with surgical precision.",
+  },
+};
+
 const SERVICES_CONTENT: LanguageContent = {
   es: {
     "services-title": "Servicios de Laboratorio Digital",
     "services-description":
-      "Elevando la odontología restauradora mediante una planificación digital de precisión y la ciencia de materiales biocompatibles.",
+      "Elevando la odontología restauradora mediante planificación digital de precisión y ciencia de materiales biocompatibles.",
+    /* service list - 1*/
+    "services-description-1-title": "Planificación de Implantes en 3D",
+    "services-description-1-description":
+      "Soluciones quirúrgicas totalmente guiadas que incluyen guías apilables y diseños de provisionalización inmediata para casos complejos de múltiples unidades.",
+    "services-description-1-extra-1": "Fusión de DICOM / STL",
+    "services-description-1-extra-2": "Mapeo del Nervio",
+    "services-description-1-extra-3": "Guías de Reducción Ósea",
+    /* service list - 2 */
+    "services-description-2-title": "Restauración de Arcada Completa",
+    "services-description-2-description":
+      "Estructuras de Zirconio Monolítico o Pekkton con protocolos de estratificación estética de alta gama.",
+    /* service list - 3 */
+    "services-description-3-title": "Diseño de Sonrisa",
+    "services-description-3-description":
+      "Integración facial 2D/3D utilizando Exocad Smile Creator para obtener resultados estéticos predecibles.",
+    /* service list - 3 */
+    "services-description-4-title": "Dominio de Exocad",
+    "services-description-4-description":
+      "Aprovechando el scripting avanzado y la integración de librerías personalizadas para ofrecer restauraciones que se adaptan perfectamente y lucen naturales.",
+    "services-description-4-extra-1": "Zirconio",
+    "services-description-4-extra-2": "E-Max",
+    "services-description-4-extra-3": "PMMA",
+    "services-description-4-extra-4": "Titanio",
   },
   en: {
     "services-title": "Digital Lab Services",
     "services-description":
       "Elevating restorative dentistry through precision digital planning and biocompatible material science.",
+    /* service list - 1*/
+    "services-description-1-title": "3D Implant Planning",
+    "services-description-1-description":
+      "Fully guided surgical solutions including stackable guides and immediate temporization designs for complex multi-unit cases.",
+    "services-description-1-extra-1": "DICOM / STL Merging",
+    "services-description-1-extra-2": "Nerve Mapping",
+    "services-description-1-extra-3": "Bone Reduction Guides",
+    /* service list - 2 */
+    "services-description-2-title": "Full Arch Restoration",
+    "services-description-2-description":
+      "Monolithic Zirconia or Pekkton frameworks with high-end aesthetic layering protocols.",
+    /* service list - 3 */
+    "services-description-3-title": "Smile Design",
+    "services-description-3-description":
+      "2D/3D facial integration using Exocad Smile Creator for predictable aesthetic outcomes.",
+    /* service list - 3 */
+    "services-description-4-title": "Exocad Mastery",
+    "services-description-4-description":
+      "Leveraging advanced scripting and custom library integration to provide restorations that fit perfectly and look natural.",
+    "services-description-4-extra-1": "Zirconia",
+    "services-description-4-extra-2": "E-Max",
+    "services-description-4-extra-3": "PMMA",
+    "services-description-4-extra-4": "Titanium",
+  },
+};
+
+const BEFORE_AFTER_CONTENT: LanguageContent = {
+  es: {
+    "before-after-title-b": "Antes y Después:",
+    "before-after-title-span": "El Cambio de Precisión",
+    "before-after-title-description":
+      "Nuestro enfoque centrado en lo digital elimina las inconsistencias del modelado manual. Vea la transformación de una dentición comprometida a una restauración dominada digitalmente.",
+    "before-after-list-1-b": "Escaneo Intraoral: ",
+    "before-after-list-1-span":
+      "Las impresiones digitales de alta resolución eliminan los incómodos moldes de masilla manuales.",
+    "before-after-list-2-b": "Análisis Dinámico: ",
+    "before-after-list-2-span":
+      "La simulación oclusal garantiza una estabilidad a largo plazo y un confort funcional.",
+  },
+  en: {
+    "before-after-title-b": "Before & After:",
+    "before-after-title-span": "The Precision Shift",
+    "before-after-title-description":
+      "Our digital-first approach eliminates the inconsistencies of manual modeling. See the transformation from a compromised dentition to a digitally mastered restoration.",
+    "before-after-list-1-b": "Intraoral Scan: ",
+    "before-after-list-1-span":
+      "High-resolution digital impressions eliminate uncomfortable manual putty molds.",
+    "before-after-list-2-b": "Dynamic Analysis: ",
+    "before-after-list-2-span":
+      "Occlusal simulation ensures long-term stability and functional comfort.",
   },
 };
 
@@ -59,6 +158,9 @@ const CONTENT: LanguageContent[] = [
   HEADER_CONTENT,
   HERO_CONTENT,
   SERVICES_CONTENT,
+  PROJECT_CONTENT,
+  BEFORE_AFTER_CONTENT,
+  FOOTER_CONTENT,
 ];
 
 CONTENT.forEach((content) => {

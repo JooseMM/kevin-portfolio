@@ -97,3 +97,14 @@ function toggleMenu(event: Event): void {
     );
   }, 300);
 }
+
+const navigationLinkList = document.getElementById("navbar-link-list");
+if (!navigationLinkList)
+  throw new Error("Unable to find the navigation link list elements");
+
+for (let i = 0; i < navigationLinkList.children.length; i++) {
+  navigationLinkList.children.item(i)?.addEventListener("click", (event) => {
+    if (!isOpen) return;
+    toggleMenu(event);
+  });
+}
