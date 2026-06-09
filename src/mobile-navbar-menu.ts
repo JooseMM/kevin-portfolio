@@ -108,3 +108,11 @@ for (let i = 0; i < navigationLinkList.children.length; i++) {
     toggleMenu(event);
   });
 }
+const mainNavigationAnchor = document.getElementById("nav-link-button");
+if (!mainNavigationAnchor)
+  throw new Error("Unable to find the navigation button element");
+
+mainNavigationAnchor.addEventListener("click", (event) => {
+  if (!isOpen) return;
+  toggleMenu(event);
+});

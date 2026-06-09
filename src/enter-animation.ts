@@ -69,6 +69,40 @@ const beforeAfterObserver = new IntersectionObserver((entries) => {
   });
 });
 
+const workflowTitle = document.getElementById("workflow-title");
+if (!workflowTitle)
+  throw new Error("Unable to find the workflow title element");
+
+const workFlowStep1 = document.getElementById("workflow-step-1");
+if (!workFlowStep1)
+  throw new Error("Unable to find the workflow step 1 element");
+
+const workFlowStep2 = document.getElementById("workflow-step-2");
+if (!workFlowStep2)
+  throw new Error("Unable to find the workflow step 2 element");
+
+const workFlowStep3 = document.getElementById("workflow-step-3");
+if (!workFlowStep3)
+  throw new Error("Unable to find the workflow step 3 element");
+
+const workFlowStep4 = document.getElementById("workflow-step-4");
+if (!workFlowStep4)
+  throw new Error("Unable to find the workflow step 4 element");
+
+const workflowObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      workFlowStep1.classList.toggle("left--in");
+      workFlowStep2.classList.toggle("right--in");
+      workFlowStep3.classList.toggle("left--in");
+      workFlowStep4.classList.toggle("right--in");
+
+      workflowObserver.unobserve(entry.target);
+    }
+  });
+});
+
+workflowObserver.observe(workflowTitle);
 beforeAfterObserver.observe(beforeAfterDescriptionContainer);
 projectObserver.observe(projectShowcaseContainer);
 servicesObserver.observe(serviceList);

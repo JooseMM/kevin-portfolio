@@ -28,10 +28,10 @@
             <a id="nav-link-2" href="/#projects">proyectos</a>
           </li>
           <li>
-            <a id="nav-link-3">flujo de trabajo</a>
+            <a id="nav-link-3" href="/#workflow">flujo de trabajo</a>
           </li>
         </ul>
-        <button id="nav-link-button" class="button">conectar</button>
+        <a href="/#cta" id="nav-link-button" class="button">conectar</a>
       </nav>
     </header>
     <!-- Hero Section -->
@@ -89,15 +89,20 @@
           Especialización en artesanía dental restauradora de alta gama.
         </p>
         <div class="hero__description__actions">
-          <button id="hero-description-actions-primary" class="button">
+          <a
+            href="/#projects"
+            id="hero-description-actions-primary"
+            class="button"
+          >
             Mirar proyectos
-          </button>
-          <button
+          </a>
+          <a
+            href="/#workflow"
             id="hero-description-actions-secondary"
             class="button button--secondary"
           >
             Mi flujo
-          </button>
+          </a>
         </div>
       </div>
       <div id="hero-image-container" class="hero__image">
@@ -480,10 +485,151 @@
       </div>
       <img id="before-after-image" src="src/assets/before-after.png" />
     </section>
-    <section class="cta">
+    <section id="workflow" class="workflow">
+      <div class="workflow__title">
+        <h3 id="workflow-title">the ecosystem</h3>
+        <p id="workflow-description">Digital Intake to Final Design</p>
+      </div>
+      <ul class="workflow__steps">
+        <li id="workflow-step-1" class="workflow__steps__left">
+          <div class="workflow__steps__description">
+            <h4 id="workflow-step-1-title">Digital Portal</h4>
+            <p id="workflow-step-1-description">
+              Secure upload of STL, PLY, and DICOM data through our encrypted
+              laboratory portal.
+            </p>
+          </div>
+          <div class="workflow__steps__icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g id="File / File_Upload">
+                  <path
+                    id="Vector"
+                    d="M12 18V12M12 12L9 14M12 12L15 14M13 3.00087C12.9045 3 12.7973 3 12.6747 3H8.2002C7.08009 3 6.51962 3 6.0918 3.21799C5.71547 3.40973 5.40973 3.71547 5.21799 4.0918C5 4.51962 5 5.08009 5 6.2002V17.8002C5 18.9203 5 19.4801 5.21799 19.9079C5.40973 20.2842 5.71547 20.5905 6.0918 20.7822C6.51921 21 7.079 21 8.19694 21L15.8031 21C16.921 21 17.48 21 17.9074 20.7822C18.2837 20.5905 18.5905 20.2842 18.7822 19.9079C19 19.4805 19 18.9215 19 17.8036V9.32568C19 9.20296 19 9.09561 18.9991 9M13 3.00087C13.2856 3.00347 13.4663 3.01385 13.6388 3.05526C13.8429 3.10425 14.0379 3.18526 14.2168 3.29492C14.4186 3.41857 14.5918 3.59182 14.9375 3.9375L18.063 7.06298C18.4089 7.40889 18.5809 7.58136 18.7046 7.78319C18.8142 7.96214 18.8953 8.15726 18.9443 8.36133C18.9857 8.53376 18.9963 8.71451 18.9991 9M13 3.00087V5.8C13 6.9201 13 7.47977 13.218 7.90759C13.4097 8.28392 13.7155 8.59048 14.0918 8.78223C14.5192 9 15.079 9 16.1969 9H18.9991M18.9991 9H19.0002"
+                    stroke="#ddb7ff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </li>
+        <li id="workflow-step-2" class="workflow__steps__right">
+          <div class="workflow__steps__icon">
+            <svg
+              fill="#ddb7ff"
+              viewBox="-2 0 19 19"
+              xmlns="http://www.w3.org/2000/svg"
+              class="cf-icon-svg"
+              stroke="#ddb7ff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M14.147 15.488a1.112 1.112 0 0 1-1.567 0l-3.395-3.395a5.575 5.575 0 1 1 1.568-1.568l3.394 3.395a1.112 1.112 0 0 1 0 1.568zm-6.361-3.903a4.488 4.488 0 1 0-1.681.327 4.443 4.443 0 0 0 1.68-.327z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="workflow__steps__description">
+            <h4 id="workflow-step-2-title">Virtual Markup</h4>
+            <p id="workflow-step-2-description">
+              Pre-design analysis of margins, paths of insertion, and occlusal
+              clearance within 4 hours of receipt.
+            </p>
+          </div>
+        </li>
+        <li id="workflow-step-3" class="workflow__steps__left">
+          <div class="workflow__steps__description">
+            <h4 id="workflow-step-3-title">Exocad Craft</h4>
+            <p id="workflow-step-3-description">
+              Precision modeling using patient-specific parameters and aesthetic
+              gold-standards.
+            </p>
+          </div>
+          <div class="workflow__steps__icon">
+            <svg
+              fill="#ddb7ff"
+              height="200px"
+              width="200px"
+              version="1.2"
+              baseProfile="tiny"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="-1077 923 256 256"
+              xml:space="preserve"
+              stroke="#ddb7ff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M-876.9,938.4l-7.7,7.6l-58.9,58.6l-72.1-72.1c-1.8-1.7-4.6-1.7-6.4,0l-37.9,37.9c-1.7,1.7-1.7,4.6,0,6.4l8.9,8.9l6.7-6.7 l2.8,2.8l-6.7,6.7l9,9l14-14l2.8,2.8l-14,14l9,9l6.7-6.7l2.8,2.8l-6.7,6.7l9,9l13.9-14l2.8,2.8l-14,13.9l9,9l6.7-6.7l2.8,2.8 l-6.7,6.7l9,9l14-13.9l4.5,4.5l-81.3,81.3l0,0c-2,2-3.1,4.7-3.1,7.4c0,0-1.6,35.4-0.3,36.7c1.3,1.3,36.9-0.1,36.9-0.1 c2.7,0,5.4-1,7.4-3l81.3-81.3l4.4,4.4l-13.9,13.9l10.6,10.6l6.7-6.7l2.8,2.8l-6.7,6.7l9,9l13.9-14l2.8,2.8l-13.9,13.9l9,9l6.7-6.7 l2.8,2.8l-6.7,6.7l9,9l13.9-13.9l2.8,2.8l-13.9,13.9l9,9l6.7-6.7l2.8,2.8l-6.7,6.7l8.9,8.9c1.8,1.8,4.6,1.8,6.4,0l37.9-37.9 c1.8-1.8,1.8-4.6,0-6.4l-73.7-73.7l58.8-58.6l7.8-7.8c6.6-6.6,6.6-17.2,0-23.8l-17-17C-859.6,931.8-870.3,931.8-876.9,938.4z M-878,980.2l-154,153.8c-3.6-3.2-10.9-10.4-14.1-14.1l154-153.8L-878,980.2z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </li>
+        <li id="workflow-step-4" class="workflow__steps__right">
+          <div class="workflow__steps__icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M20.5 7.27783L12 12.0001M12 12.0001L3.49997 7.27783M12 12.0001L12 21.5001M14 20.889L12.777 21.5684C12.4934 21.726 12.3516 21.8047 12.2015 21.8356C12.0685 21.863 11.9315 21.863 11.7986 21.8356C11.6484 21.8047 11.5066 21.726 11.223 21.5684L3.82297 17.4573C3.52346 17.2909 3.37368 17.2077 3.26463 17.0893C3.16816 16.9847 3.09515 16.8606 3.05048 16.7254C3 16.5726 3 16.4013 3 16.0586V7.94153C3 7.59889 3 7.42757 3.05048 7.27477C3.09515 7.13959 3.16816 7.01551 3.26463 6.91082C3.37368 6.79248 3.52345 6.70928 3.82297 6.54288L11.223 2.43177C11.5066 2.27421 11.6484 2.19543 11.7986 2.16454C11.9315 2.13721 12.0685 2.13721 12.2015 2.16454C12.3516 2.19543 12.4934 2.27421 12.777 2.43177L20.177 6.54288C20.4766 6.70928 20.6263 6.79248 20.7354 6.91082C20.8318 7.01551 20.9049 7.13959 20.9495 7.27477C21 7.42757 21 7.59889 21 7.94153L21 12.5001M7.5 4.50008L16.5 9.50008M16 18.0001L18 20.0001L22 16.0001"
+                  stroke="#ddb7ff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="workflow__steps__description">
+            <h4 id="workflow-step-4-title">Final Output</h4>
+            <p id="workflow-step-4-description">
+              Milled or printed units are inspected under 20x magnification
+              before dispatch or digital file return.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="cta" class="cta">
       <div class="cta__contact">
-        <h3>Ready to Digitalize?</h3>
-        <p>
+        <h3 id="cta-title">Ready to Digitalize?</h3>
+        <p id="cta-description">
           Connect with a technician who speaks both "Dentist" and "Digital".
           Let's collaborate on your next complex case.
         </p>

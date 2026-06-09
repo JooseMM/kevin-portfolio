@@ -26,6 +26,7 @@ li {
 
 h1,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -142,7 +143,7 @@ html {
 .button {
   padding: 1rem 1.5rem;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
   font-weight: 500;
   font-size: 1rem;
   text-transform: uppercase;
@@ -157,10 +158,14 @@ html {
   box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.2);
 }
 
-.button--secondary {
+.hero__description__actions .button {
+  color: var(--secondary-color);
+}
+
+.hero__description__actions .button--secondary {
   background: none;
   border: 0.1rem solid var(--primary-color);
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 .navbar__logo img {
@@ -175,6 +180,7 @@ html {
   justify-content: center;
   flex-direction: column;
   padding: 1.5rem;
+  min-height: 35rem;
 }
 
 .hero__image {
@@ -226,7 +232,7 @@ html {
   margin-top: 1.5rem;
 }
 
-.hero__description__actions button {
+.hero__description__actions a {
   width: 100%;
   min-width: 14rem;
 }
@@ -532,11 +538,6 @@ html {
   font-weight: 600;
 }
 
-.cta {
-  padding: 6rem 1rem;
-  gap: 1rem;
-}
-
 .navbar__navigation,
 .navbar__navigation ul {
   flex-direction: column;
@@ -600,13 +601,100 @@ html {
   cursor: pointer;
 }
 
+.workflow {
+  display: flex;
+  background-color: #0d1c2d;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 6rem 10rem;
+  gap: 3rem;
+}
+
+.workflow__title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.workflow__title h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--primary-color);
+  letter-spacing: 0.2rem;
+}
+
+.workflow__title p {
+  color: var(--ft-secodary-color);
+  opacity: 0.8;
+}
+
+.workflow__steps__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  color: var(--ft-secodary-color);
+}
+
+.workflow__steps__description p {
+  opacity: 0.8;
+}
+
+.workflow__steps {
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-inline: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  max-width: 60rem;
+}
+
+.workflow__steps__icon {
+  display: flex;
+  background-color: var(--bg-primary);
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 0.15rem solid var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+.workflow__steps svg {
+  display: block;
+  width: 1.5rem;
+}
+
+.workflow__steps li {
+  position: relative;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  max-width: 25rem;
+  opacity: 0;
+}
+
+.cta {
+  padding: 6rem 1rem;
+  gap: 1rem;
+  text-align: center;
+}
+
 .cta__contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  width: 80%;
+  width: 100%;
+  max-width: 60rem;
   color: var(--ft-secodary-color);
   margin-inline: auto;
   background-color: #0e1d2e;
@@ -624,7 +712,6 @@ html {
 
 .cta__contact p {
   opacity: 0.8;
-  text-align: center;
   max-width: 65ch;
   line-height: 1.8;
 }
@@ -680,7 +767,7 @@ footer ul {
 
 footer {
   padding-block: 4rem 3rem;
-  gap: 1rem;
+  gap: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -752,6 +839,17 @@ footer p {
 }
 
 /* animations */
+@keyframes right-workflow-in {
+  from {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-13.5rem);
+  }
+}
+
 @keyframes right-in {
   from {
     opacity: 0;
@@ -771,6 +869,17 @@ footer p {
   to {
     opacity: 0;
     transform: translateX(30%);
+  }
+}
+
+@keyframes left-workflow-in {
+  from {
+    opacity: 0;
+    transform: translateX(80%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(13.5rem);
   }
 }
 
@@ -861,6 +970,7 @@ footer p {
     flex-direction: row;
     gap: clamp(0rem, 5dvw, 5rem);
     padding: 4rem;
+    min-height: none;
   }
 
   .hero__image {
@@ -877,6 +987,7 @@ footer p {
   }
 
   .hero__description__actions {
+      text-align: center;
     flex-direction: row;
   }
 
@@ -897,7 +1008,7 @@ footer p {
     width: 100%;
   }
 
-  .hero__description__actions button {
+  .hero__description__actions a {
     width: auto;
     min-width: 14rem;
   }
@@ -909,6 +1020,42 @@ footer p {
   .before_after__description h3,
   .before_after__description p {
     text-align: left;
+  }
+
+  .workflow__steps::before {
+    content: "";
+    background: linear-gradient(var(--primary-color), rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+    width: 0.15rem;
+    bottom: 0;
+  }
+
+  .workflow__steps li {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    width: 30rem;
+    max-width: none;
+  }
+
+  .workflow__steps__left {
+    text-align: right;
+    transform: translateX(-13.5rem);
+  }
+
+  .workflow__steps__right {
+    text-align: left;
+    transform: translateX(13.5rem);
+  }
+
+  .workflow .left--in {
+    animation: right-workflow-in 500ms ease-out forwards;
+  }
+
+  .workflow .right--in {
+    animation: left-workflow-in 500ms ease-out forwards;
   }
 
   footer,

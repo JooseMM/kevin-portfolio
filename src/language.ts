@@ -154,13 +154,65 @@ const BEFORE_AFTER_CONTENT: LanguageContent = {
   },
 };
 
+const CTA_CONTENT: LanguageContent = {
+  es: {
+    "cta-title": "¿Listo para digitalizarte?",
+    "cta-description":
+      'Conéctate con un técnico que habla tanto el idioma del "dentista" como el "digital". Colaboremos en tu próximo caso complejo.',
+  },
+  en: {
+    "cta-title": "Ready to Digitalize?",
+    "cta-description":
+      'Connect with a technician who speaks both "Dentist" and "Digital". Let\'s collaborate on your next complex case.',
+  },
+};
+
+const WORKFLOW_CONTENT: LanguageContent = {
+  es: {
+    "workflow-title": "El ecosistema",
+    "workflow-description": "Desde la admisión digital hasta el diseño final",
+    /* Steps */
+    "workflow-step-1-title": "Portal digital",
+    "workflow-step-1-description":
+      "Carga segura de datos STL, PLY y DICOM a través de nuestro portal de laboratorio encriptado.",
+    "workflow-step-2-title": "Marcado virtual",
+    "workflow-step-2-description":
+      "Análisis de prediseño de márgenes, vías de inserción y espacio libre oclusal dentro de las 4 horas posteriores a la recepción.",
+    "workflow-step-3-title": "Diseño en Exocad",
+    "workflow-step-3-description":
+      "Modelado de precisión utilizando parámetros específicos del paciente y estándares de oro estéticos.",
+    "workflow-step-4-title": "Resultado final",
+    "workflow-step-4-description":
+      "Las unidades fresadas o impresas se inspeccionan bajo un aumento de 20x antes del envío o de la devolución del archivo digital.",
+  },
+  en: {
+    "workflow-title": "the ecosystem",
+    "workflow-description": "Digital Intake to Final Design",
+    /* Steps */
+    "workflow-step-1-title": "Digital Portal",
+    "workflow-step-1-description":
+      "Secure upload of STL, PLY, and DICOM data through our encrypted laboratory portal.",
+    "workflow-step-2-title": "Virtual Markup",
+    "workflow-step-2-description":
+      "Pre-design analysis of margins, paths of insertion, and occlusal clearance within 4 hours of receipt.",
+    "workflow-step-3-title": "Exocad Craft",
+    "workflow-step-3-description":
+      "Precision modeling using patient-specific parameters and aesthetic gold-standards.",
+    "workflow-step-4-title": "Final Output",
+    "workflow-step-4-description":
+      "Milled or printed units are inspected under 20x magnification before dispatch or digital file return.",
+  },
+};
+
 const CONTENT: LanguageContent[] = [
   HEADER_CONTENT,
   HERO_CONTENT,
   SERVICES_CONTENT,
   PROJECT_CONTENT,
   BEFORE_AFTER_CONTENT,
+  WORKFLOW_CONTENT,
   FOOTER_CONTENT,
+  CTA_CONTENT,
 ];
 
 CONTENT.forEach((content) => {
