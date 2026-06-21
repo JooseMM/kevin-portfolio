@@ -4,7 +4,7 @@ interface LanguageContent {
 }
 
 let currentLanguage: "es" | "en" = "en";
-if (navigator.language?.toLowerCase() === "es") currentLanguage = "es";
+if (navigator.language?.toLowerCase().includes("es")) currentLanguage = "es";
 
 const HEADER_CONTENT: LanguageContent = {
   en: {
