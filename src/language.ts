@@ -77,13 +77,10 @@ const SERVICES_CONTENT: LanguageContent = {
     "services-description-1-title": "Planificación de Implantes en 3D",
     "services-description-1-description":
       "Soluciones quirúrgicas totalmente guiadas que incluyen guías apilables y diseños de provisionalización inmediata para casos complejos de múltiples unidades.",
-    "services-description-1-extra-1": "Fusión de DICOM / STL",
-    "services-description-1-extra-2": "Mapeo del Nervio",
-    "services-description-1-extra-3": "Guías de Reducción Ósea",
     /* service list - 2 */
     "services-description-2-title": "Restauración de Arcada Completa",
     "services-description-2-description":
-      "Estructuras de Zirconio Monolítico o Pekkton con protocolos de estratificación estética de alta gama.",
+      "Estructuras de zirconio monolítico, barras Blender y cargas inmediatas de alta gama.",
     /* service list - 3 */
     "services-description-3-title": "Diseño de Sonrisa",
     "services-description-3-description":
@@ -92,10 +89,6 @@ const SERVICES_CONTENT: LanguageContent = {
     "services-description-4-title": "Dominio de Exocad",
     "services-description-4-description":
       "Aprovechando el scripting avanzado y la integración de librerías personalizadas para ofrecer restauraciones que se adaptan perfectamente y lucen naturales.",
-    "services-description-4-extra-1": "Zirconio",
-    "services-description-4-extra-2": "E-Max",
-    "services-description-4-extra-3": "PMMA",
-    "services-description-4-extra-4": "Titanio",
   },
   en: {
     "services-title": "Digital Lab Services",
@@ -105,13 +98,10 @@ const SERVICES_CONTENT: LanguageContent = {
     "services-description-1-title": "3D Implant Planning",
     "services-description-1-description":
       "Fully guided surgical solutions including stackable guides and immediate temporization designs for complex multi-unit cases.",
-    "services-description-1-extra-1": "DICOM / STL Merging",
-    "services-description-1-extra-2": "Nerve Mapping",
-    "services-description-1-extra-3": "Bone Reduction Guides",
     /* service list - 2 */
     "services-description-2-title": "Full Arch Restoration",
     "services-description-2-description":
-      "Monolithic Zirconia or Pekkton frameworks with high-end aesthetic layering protocols.",
+      "Monolithic zirconia structures, Blender bars, and high-end immediate loading.",
     /* service list - 3 */
     "services-description-3-title": "Smile Design",
     "services-description-3-description":
@@ -120,10 +110,6 @@ const SERVICES_CONTENT: LanguageContent = {
     "services-description-4-title": "Exocad Mastery",
     "services-description-4-description":
       "Leveraging advanced scripting and custom library integration to provide restorations that fit perfectly and look natural.",
-    "services-description-4-extra-1": "Zirconia",
-    "services-description-4-extra-2": "E-Max",
-    "services-description-4-extra-3": "PMMA",
-    "services-description-4-extra-4": "Titanium",
   },
 };
 

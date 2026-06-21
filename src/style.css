@@ -186,6 +186,7 @@ html {
 .hero__image {
   display: none;
   opacity: 0;
+  max-width: 30rem;
 }
 
 .hero__description {
@@ -437,6 +438,10 @@ html {
   background-color: #0d1c2d;
   transition: 300ms ease-in-out;
   border: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+
+.projects__showcase__button:disabled {
+  opacity: 0.5;
 }
 
 .projects__showcase__button:hover {
@@ -987,7 +992,7 @@ footer p {
   }
 
   .hero__description__actions {
-      text-align: center;
+    text-align: center;
     flex-direction: row;
   }
 
