@@ -1,5 +1,5 @@
 let currentIndex = 0;
-const projectList = ["/projects/project-1.html", "https://example.org"];
+const projectList = ["/projects/project-1.html", "/projects/project-2.html", "/projects/project-3.html", "/projects/project-4.html", "/projects/project-5.html"];
 
 const frame = document.getElementById("projects-showcase") as HTMLIFrameElement;
 if (!frame) throw new Error("Unable to find the iframe project element");
