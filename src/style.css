@@ -408,6 +408,9 @@ html {
 }
 
 .projects__showcase__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
   height: 30rem;
@@ -418,6 +421,13 @@ html {
   box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1);
   border: 0.1rem solid rgba(255, 255, 255, 0.2);
   opacity: 0;
+}
+
+.loading_iframe {
+  display: block;
+  max-width: 5rem;
+  opacity: 0.5;
+  animation: spin 2500ms linear infinite;
 }
 
 .projects__showcase {

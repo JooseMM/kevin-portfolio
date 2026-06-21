@@ -7,8 +7,16 @@ const projectList = [
   "/projects/project-5.html",
 ];
 
+const spinner = document.getElementById(
+  "iframe-loading-spinner",
+) as HTMLIFrameElement;
+if (!spinner)
+  throw new Error("Unable to find the iframe loading spinner element");
+
 const frame = document.getElementById("projects-showcase") as HTMLIFrameElement;
 if (!frame) throw new Error("Unable to find the iframe project element");
+
+showLoadingSpinner(true);
 
 const previousProject = document.getElementById(
   "project-showcase-prev",
@@ -27,6 +35,7 @@ frame.src = projectList[0];
 forbidInteraction(true);
 frame.onload = () => {
   forbidInteraction(false);
+  showLoadingSpinner(false);
 };
 
 previousProject.addEventListener("click", () => {
@@ -37,6 +46,7 @@ previousProject.addEventListener("click", () => {
   currentIndex = (currentIndex - 1) % projectList.length;
 
   forbidInteraction(true);
+  showLoadingSpinner(true);
   freeMemory();
   setTimeout(() => (frame.src = projectList[currentIndex]));
 });
@@ -45,6 +55,7 @@ nextProject.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % projectList.length;
 
   forbidInteraction(true);
+  showLoadingSpinner(true);
   freeMemory();
   setTimeout(() => (frame.src = projectList[currentIndex]));
 });
@@ -59,4 +70,9 @@ function freeMemory() {
     frame.contentWindow.document.body.innerHTML = "";
     frame.contentWindow.document.head.innerHTML = "";
   }
+}
+
+function showLoadingSpinner(show: boolean) {
+  frame.style.display = show ? "none" : "block";
+  spinner.style.display = show ? "block" : "none";
 }
